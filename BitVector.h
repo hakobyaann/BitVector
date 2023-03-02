@@ -20,4 +20,4 @@ public:
         unsigned long long get_size();
 };
 
-#endif
+#endif //VECTOR_BIT
