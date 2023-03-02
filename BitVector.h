@@ -5,9 +5,6 @@
 
 class BitVector
 {
-private:
-        unsigned long long *_ptr;
-        unsigned long long _size;
 public:
         BitVector();
         BitVector(unsigned long long);
@@ -18,6 +15,9 @@ public:
         bool operator[](unsigned long long);
         friend std::ostream& operator<< (std::ostream&, const BitVector&); 
         unsigned long long get_size();
+private:
+        unsigned long long *_ptr;
+        unsigned long long _size;
 };
 
 #endif //VECTOR_BIT
